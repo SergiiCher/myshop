@@ -1,0 +1,17 @@
+<div class="card-container">
+    
+    <div class="card" *ngIf="products.length > 0; else cartEmpty">
+        <div *ngFor="let item of products; trackBy: trackByName">
+            <p>{{item.name}} - {{item.price}}$</p>
+        </div>
+        <button class="btn btn-default" (click)="oncleanCart()">Clean cart</button>
+    </div>
+</div>
+
+<ng-template #cartEmpty>
+    <p>You haven't selected anything yet.</p>
+    <button class="btn btn-default" (click)="onFillCart()">Fill cart</button>
+</ng-template>
+
+
+

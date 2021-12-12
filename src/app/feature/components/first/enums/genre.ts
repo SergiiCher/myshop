@@ -1,5 +1,5 @@
 export enum Genre {
-    Action = "ACTION",
+    Action = "Action",
     Adventure = "Adventure",
     Fighting = "Fighting",
     Platform = "Platform",
