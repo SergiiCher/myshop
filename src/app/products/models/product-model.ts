@@ -1,7 +1,7 @@
 import { Genre } from "src/app/feature/components/first/enums/genre";
 
 export class ProductModel {
-    
+
     constructor (
         public name: string,
         public description: string,
@@ -10,3 +10,4 @@ export class ProductModel {
         public isAvailable: boolean = false
         ){}
 }
+// В названии файла стоит использовать . вместо -

@@ -16,14 +16,14 @@ export class CartListComponent implements OnInit {
     this.products = this.cartService.getProducts();
   }
 
-  public trackByName(index: number, item: ProductModel): string { return item.name; }
+  trackByName(index: number, item: ProductModel): string { return item.name; }
 
-  public oncleanCart(){
+  oncleanCart(): void {
     this.products = [];
     console.log('Cart deleted!');
   }
 
-  public onFillCart(){
+  onFillCart(): void {
     this.products = this.cartService.getProducts();
   }
 }
