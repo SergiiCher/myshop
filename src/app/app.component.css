@@ -1,0 +1,17 @@
+.container {
+    position: fixed;
+    left: 350px;
+    padding: 0;
+    margin: 0;
+}
+
+.left-element {
+    background: green;
+    display: inline-table;
+    float: left;
+}
+
+.right-element {
+    background: rgb(216, 208, 208);
+    display:inline-flex;
+}

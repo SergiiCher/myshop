@@ -1,8 +1,9 @@
 import { Genre } from "src/app/feature/components/first/enums/genre";
 
-export class ProductModel {
+export class Product {
 
     constructor (
+        public id: number,
         public name: string,
         public description: string,
         public price: number = 0,

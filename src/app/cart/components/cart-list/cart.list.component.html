@@ -1,9 +1,10 @@
 <div class="card-container">
     
-    <div class="card" *ngIf="products.length > 0; else cartEmpty">
-        <div *ngFor="let item of products; trackBy: trackByName">
-            <p>{{item.name}} - {{item.price}}$</p>
+    <div class="card" *ngIf="cart.orders.length > 0; else cartEmpty">
+        <div *ngFor="let order of cart.orders; trackBy: trackById">
+            <p>{{order.product.name}} - {{order.product.price}}$ - {{order.quantity}}pcs</p>
         </div>
+        <p>total cost : {{cart.totalCost}}</p>
         <button class="btn btn-default" (click)="oncleanCart()">Clean cart</button>
     </div>
 </div>
