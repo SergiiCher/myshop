@@ -1,4 +1,5 @@
-import { Product } from "src/app/products/models/product.model";
+import { Product } from "../../products/models/product.model";
+
 
 export class Order {
     constructor(

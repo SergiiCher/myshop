@@ -1,5 +1,4 @@
-
-import { Order } from "./order.model";
+import { Order } from "../../orders/models/order.model";
 
 export class Cart {
     constructor(

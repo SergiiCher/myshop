@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CartModule } from './cart/cart.module';
 
 import { AppComponent } from './app.component';
+import { CartModule } from './components/cart/cart.module';
+import { ProductsModule } from './components/products/products.module';
 import { FirstComponent } from './feature/components/first/first.component';
-import { ProductsModule } from './products/products.module';
+
+
 
 @NgModule({
   declarations: [
